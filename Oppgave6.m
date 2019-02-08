@@ -1,3 +1,6 @@
+%Calculate an approximate of PI using the Leibniz formula for π
+%For more info on this formula see: https://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80
+
 function [res] = Oppgave6(k)
 res = 1;
 negative = true;
@@ -10,11 +13,10 @@ negative = true;
             end
             if negative == true
                 res = res - mid;
-                negative = false;
             else 
                 res = res + mid;
-                negative = true;
             end 
+            negative = ~negative;
         end       
     end
 end

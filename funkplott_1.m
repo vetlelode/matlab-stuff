@@ -7,6 +7,7 @@ roots(out)
 figure
 plot(out)
 grid;
+title("f(x)")
 xlabel("X");
 ylabel("y");
 %Matlab anbefaler integral over quad funksjonen
